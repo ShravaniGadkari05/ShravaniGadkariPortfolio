@@ -1,68 +1,78 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shravani Gadkari | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
+      font-family: "Poppins", sans-serif;
       background: linear-gradient(to bottom, #004aad, #e6f0ff);
       color: #333;
     }
 
     header {
+      text-align: center;
+      padding: 60px 20px 40px;
       background-color: #004aad;
       color: white;
-      text-align: center;
-      padding: 40px 20px;
       position: relative;
     }
 
+    /* Connect icons */
     .connect {
       position: absolute;
       top: 20px;
       right: 30px;
     }
-
-    .connect a {
-      margin-left: 10px;
+   .connect a {
+      margin-left: 12px;
       text-decoration: none;
       color: white;
       font-size: 22px;
- }
+      transition: 0.3s;
+    }
 
+    .connect a:hover {
+      color: #ffcc00;
+    }
+
+    /* Profile photo styling */
     .profile-photo {
-      width: 220px;
-      height: 220px;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
-      border: 5px solid white;
       object-fit: cover;
-      object-position: center;
+      object-position: top center;
+      border: 5px solid white;
       margin-bottom: 15px;
     }
 
     h1 {
       margin: 10px 0;
-      font-size: 2em;
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+section {
+      background-color: white;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       color: #004aad;
       border-bottom: 3px solid #004aad;
       display: inline-block;
-      margin-bottom: 10px;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-  background-color: white;
-      margin-top: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
     }
 
     ul {
@@ -80,15 +90,22 @@
     }
   </style>
 </head>
-<body>
 
+body>
   <header>
     <div class="connect">
-      <a href="mailto:shravanigadkari05@gmail.com" title="Mail">📧</a>
-      <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" target="_blank" title="LinkedIn">🔗</a>
-      <a href="https://github.com/ShravaniGadkari05" target="_blank" title="GitHub">💻</a>
+      <a href="mailto:shravanigadkari05@gmail.com" title="Mail">
+        📧
+      </a>
+      <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" target="_blank" title="LinkedIn">
+        🔗
+      </a>
+      <a href="https://github.com/ShravaniGadkari05" target="_blank" title="GitHub">
+        💻
+      </a>
     </div>
-   <img src="shravani photo.jpg" alt="Shravani Gadkari" class="profile-photo">
+
+    <img src="shravani photo.jpg" alt="Shravani Gadkari" class="profile-photo" />
     <h1>Shravani Gadkari</h1>
     <p>Electronics & Telecommunication Engineering Student</p>
     <p>Passionate about 5G • IoT • Networking • Cyber Security</p>
@@ -97,10 +114,10 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a Final Electronics and Telecommunication Engineering student at Dr. Babasaheb Ambedkar Technological University.
+      I am a Final Year Electronics and Telecommunication Engineering student at Dr. Babasaheb Ambedkar Technological University.
       My interests include Networking, IoT, and 5G Communication Systems.
-      I am passionate about working on innovative projects that combine hardware and software to solve real-world problems.
-    </p>
+      I enjoy working on innovative projects that connect software and hardware to solve real-world problems.
+       </p>
   </section>
 
   <section id="skills">
@@ -110,7 +127,7 @@
       <li>Web Development: HTML, CSS, JavaScript</li>
       <li>Networking Fundamentals & Cyber Security</li>
       <li>IoT and Embedded Systems</li>
- <li>Data Analytics using Python</li>
+      <li>Data Analytics using Python</li>
     </ul>
   </section>
 
@@ -121,23 +138,23 @@
       <li>5G Masterclass – Udemy</li>
       <li>Python:For Beginners– Udemy</li>
       <li>Java 17-Udemy</li>
+      <li>Web Development Internship – Prodify</li>
     </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><b>Smart EV Charging Station:</b> A project using Arduino and IoT for efficient EV charging control.</li>
-      <li><b>Voice Assistant Bot:</b> A Python-based personal voice bot that executes commands and retrieves information.</li>
-<li><b>Phishing Detection Website:</b> A web-based ML project that detects phishing URLs using Random Forest.</li>
+      <ul>
+      <li><b>Smart EV Charging Station:</b> Arduino & IoT-based system for efficient EV charging management.</li>
+      <li><b>Voice Assistant Bot:</b> Python-based personal assistant executing commands and fetching information.</li>
+      <li><b>Phishing Detection Website:</b> Machine Learning project detecting phishing URLs using Random Forest.</li>
     </ul>
   </section>
 
   <footer>
     © 2025 Shravani Gadkari | Portfolio
   </footer>
-
 </body>
 </html>
 
-          
+      
