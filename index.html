@@ -1,160 +1,218 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shravani Gadkari | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
     body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(to bottom, #004aad, #e6f0ff);
+      background: linear-gradient(180deg, #e3f2fd, #ffffff);
       color: #333;
+      line-height: 1.6;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px 40px;
-      background-color: #004aad;
+      padding: 60px 20px 30px;
+      background: linear-gradient(135deg, #0056d6, #002f8e);
       color: white;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
       position: relative;
     }
 
-    /* Connect icons */
+    /* ---- Connect with Me button ---- */
     .connect {
       position: absolute;
       top: 20px;
       right: 30px;
-    }
-   .connect a {
-      margin-left: 12px;
-      text-decoration: none;
-      color: white;
-      font-size: 22px;
-      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
 
-    .connect a:hover {
-      color: #ffcc00;
+    .connect a img {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.2s;
+      filter: brightness(0) invert(1);
     }
 
-    /* Profile photo styling */
-    .profile-photo {
-      width: 240px;
-      height: 240px;
+    .connect a img:hover {
+      transform: scale(1.15);
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      object-position: top center;
-      border: 5px solid white;
+      border: 4px solid white;
       margin-bottom: 15px;
     }
 
-    h1 {
-      margin: 10px 0;
-      font-size: 2.2em;
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
     }
 
-    p {
-      font-size: 1.1em;
+    header h2 {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
     }
 
-section {
-      background-color: white;
+    section {
       max-width: 900px;
-      margin: 30px auto;
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    h2 {
-      color: #004aad;
-      border-bottom: 3px solid #004aad;
+    h2.section-title {
+      color: #0056d6;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #0056d6;
       display: inline-block;
-      margin-bottom: 15px;
+      padding-bottom: 5px;
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      line-height: 1.8;
+    p, li { font-size: 1.05rem; }
+
+    ul { margin-top: 10px; padding-left: 25px; }
+
+    .skills-list li, .cert-list li {
+      list-style-type: "🔹 ";
+      margin-bottom: 8px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 { color: #007bff; }
+
+    .project-card a {
+      color: #0056d6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    .contact a {
+      color: #0056d6;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #004aad;
+      background: #0056d6;
       color: white;
-      margin-top: 40px;
+      padding: 15px 0;
+      margin-top: 30px;
     }
   </style>
 </head>
 
-body>
+<body>
   <header>
+    <!-- Connect icons -->
     <div class="connect">
-      <a href="mailto:shravanigadkari05@gmail.com" title="Mail">
-        📧
+      <a href="mailto:shravanigadkari05@gmail.com" title="Mail me" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
       </a>
-      <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" target="_blank" title="LinkedIn">
-        🔗
+      <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" title="LinkedIn" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
       </a>
-      <a href="https://github.com/ShravaniGadkari05" target="_blank" title="GitHub">
-        💻
+      <a href="https://github.com/ShravaniGadkari05" title="GitHub" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
       </a>
     </div>
 
-    <img src="shravani photo.jpg" alt="Shravani Gadkari" class="profile-photo" />
+    <img src="shravani photo.jpg" alt="Shravani Gadkari Photo" />
     <h1>Shravani Gadkari</h1>
-    <p>Electronics & Telecommunication Engineering Student</p>
+    <h2>Electronics & Telecommunication Engineering Student</h2>
     <p>Passionate about 5G • IoT • Networking • Cyber Security</p>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Final Year Electronics and Telecommunication Engineering student at Dr. Babasaheb Ambedkar Technological University.
-      My interests include Networking, IoT, and 5G Communication Systems.
-      I enjoy working on innovative projects that connect software and hardware to solve real-world problems.
-       </p>
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center;">
+      I am a Final year Electronics & Telecommunication Engineering student at Dr. Babasaheb Ambedkar Technological University.
+      My interests include Networking, 5G Communication Systems, IoT, and Cyber Security.
+      I love working on innovative projects that connect software and hardware.
+    </p>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming Languages: Python, C++, Java</li>
-      <li>Web Development: HTML, CSS, JavaScript</li>
-      <li>Networking Fundamentals & Cyber Security</li>
-      <li>IoT and Embedded Systems</li>
-      <li>Data Analytics using Python</li>
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li>Networking (TCP/IP, Routing, Switching)</li>
+      <li>5G & Digital Communication</li>
+      <li>IoT Systems & Embedded Devices</li>
+      <li>Python, C++, HTML, CSS</li>
+      <li>MATLAB, Arduino IDE</li>
+      <li>Cyber Security Basics</li>
     </ul>
   </section>
 
   <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Cyber Security Internship – InternPe</li>
+    <h2 class="section-title">Certifications</h2>
+    <ul class="cert-list">
       <li>5G Masterclass – Udemy</li>
-      <li>Python:For Beginners– Udemy</li>
-      <li>Java 17-Udemy</li>
-      <li>Web Development Internship – Prodify</li>
+      <li>Cyber Security Internship – InternPe</li>
+      <li>Python for Beginners – Udemy</li>
+      <li>Java 17 Masterclass – Udemy</li>
     </ul>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-      <ul>
-      <li><b>Smart EV Charging Station:</b> Arduino & IoT-based system for efficient EV charging management.</li>
-      <li><b>Voice Assistant Bot:</b> Python-based personal assistant executing commands and fetching information.</li>
-      <li><b>Phishing Detection Website:</b> Machine Learning project detecting phishing URLs using Random Forest.</li>
-    </ul>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+      <h3>⚡ Smart EV Charging Station</h3>
+      <p>Arduino-based prototype for efficient EV charging with sensors and LCD for real-time monitoring.</p>
+      <a href="https://github.com/ShravaniGadkari05/Smart-EV-Charging-Station" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🧠 Phishing Detection Website</h3>
+      <p>Machine learning-based web app that identifies phishing URLs using Flask and scikit-learn.</p>
+      <a href="https://github.com/ShravaniGadkari05/Phishing-Detection-Website" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🎙 Jarvis Voice Assistant</h3>
+      <p>Python-based voice bot that automates system tasks through speech recognition.</p>
+      <a href="https://github.com/ShravaniGadkari05/Jarvis-Voice-Assistant" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+      <p>📧 Email: <a href="mailto:shravanigadkari05@gmail.com">shravanigadkari05@gmail.com</a></p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" target="_blank">linkedin.com/in/shravani-gadkari-a1a26a31a</a></p>
+      <p>💻 GitHub: <a href="https://github.com/ShravaniGadkari05" target="_blank">github.com/ShravaniGadkari05</a></p>
+      <p>📍 Location: Mangaon, Raigad, India</p>
+    </div>
   </section>
 
   <footer>
-    © 2025 Shravani Gadkari | Portfolio
+    <p>© 2025 Shravani Gadkari | Built with 💙 using HTML & CSS</p>
   </footer>
 </body>
 </html>
-
-      
