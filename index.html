@@ -4,9 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shravani Gadkari | Portfolio</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
     body {
       background: linear-gradient(180deg, #e3f2fd, #ffffff);
@@ -81,9 +88,14 @@
       padding-bottom: 5px;
     }
 
-    p, li { font-size: 1.05rem; }
+    p, li {
+      font-size: 1.05rem;
+    }
 
-    ul { margin-top: 10px; padding-left: 25px; }
+    ul {
+      margin-top: 10px;
+      padding-left: 25px;
+    }
 
     .skills-list li, .cert-list li {
       list-style-type: "🔹 ";
@@ -98,7 +110,9 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .project-card h3 { color: #007bff; }
+    .project-card h3 {
+      color: #007bff;
+    }
 
     .project-card a {
       color: #0056d6;
@@ -128,99 +142,134 @@
 </head>
 
 <body>
-  <header>
-    <!-- Connect icons -->
-    <div class="connect">
-      <a href="mailto:shravanigadkari05@gmail.com" title="Mail me" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
-      </a>
-      <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" title="LinkedIn" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/ShravaniGadkari05" title="GitHub" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-      </a>
-    </div>
 
-    <img src="shravani photo.jpg" alt="Shravani Gadkari Photo" />
-    <h1>Shravani Gadkari</h1>
-    <h2>Electronics & Telecommunication Engineering Student</h2>
-    <p>Passionate about 5G • IoT • Networking • Cyber Security</p>
-  </header>
+<header>
 
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p style="text-align:center;">
-      I am a Final year Electronics & Telecommunication Engineering student at Dr. Babasaheb Ambedkar Technological University.
-      My interests include Networking, 5G Communication Systems, IoT, and Cyber Security.
-      I love working on innovative projects that connect software and hardware.
+  <!-- Connect icons -->
+  <div class="connect">
+    <a href="mailto:shravanigadkari05@gmail.com" title="Mail me" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
+    </a>
+
+    <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" title="LinkedIn" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    </a>
+
+    <a href="https://github.com/ShravaniGadkari05" title="GitHub" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+    </a>
+  </div>
+
+  <img src="shravani photo.jpg" alt="Shravani Gadkari Photo" />
+  <h1>Shravani Gadkari</h1>
+  <h2>Electronics & Telecommunication Engineering Student</h2>
+  <p>Networking • 5G Communication • IoT • Cyber Security</p>
+
+</header>
+
+<section id="about">
+  <h2 class="section-title">Professional Summary</h2>
+  <p style="text-align:center;">
+    Final-year Electronics and Telecommunication Engineering student with strong interest in networking,
+    communication systems and modern technologies. Through hands-on learning, projects, and specialized courses,
+    I have developed a strong foundation in network fundamentals, communication concepts, and basic cyber security
+    practices. I am motivated to start my career in the networking or telecom field and contribute with practical
+    and technical skills.
+  </p>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <ul class="skills-list">
+    <li><b>B.Tech in Electronics & Telecommunication Engineering</b>, Dr. Babasaheb Ambedkar Technological University (2022 - Present)</li>
+    <li><b>HSC</b>, R.B. Mone Jr. College, Goregaon, Raigad – Maharashtra State Board (2021 - 2022)</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <ul class="skills-list">
+    <li><b>Networking:</b> TCP/IP, OSI Model, Routing & Switching, LAN/WAN</li>
+    <li><b>Telecommunication:</b> 5G Concepts, Digital & Wireless Communication, RF & Antenna Basics</li>
+    <li><b>Programming:</b> Python (Basics), Assembly (8085)</li>
+    <li><b>Tools:</b> MATLAB, VS Code, Arduino IDE</li>
+    <li><b>Security:</b> Basic Cyber Security Concepts</li>
+  </ul>
+</section>
+
+<section id="certifications">
+  <h2 class="section-title">Certifications / Internships</h2>
+  <ul class="cert-list">
+    <li>Python for Beginners (74.5 hours) – Udemy</li>
+    <li>Java 17 Masterclass (135.5 hours) – Udemy</li>
+    <li>5G Masterclass – Udemy</li>
+    <li>Cyber Security Internship – InternPe</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-card">
+    <h3>⚡ Smart EV Charging Station</h3>
+    <p>
+      Prototype of automated EV charger with real-time LCD monitoring and IR-based vehicle detection.
+      Built using Arduino UNO, IR sensors and LCD display.
     </p>
-  </section>
+    <a href="https://github.com/ShravaniGadkari05/Smart-EV-Charging-Station" target="_blank">
+      View on GitHub
+    </a>
+  </div>
 
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul class="skills-list">
-      <li>Networking (TCP/IP, Routing, Switching)</li>
-      <li>5G & Digital Communication</li>
-      <li>IoT Systems & Embedded Devices</li>
-      <li>Python,HTML</li>
-      <li>MATLAB, Arduino IDE</li>
-      <li>Cyber Security Basics</li>
-    </ul>
-  </section>
+  <div class="project-card">
+    <h3>♿ Voice Controlled Smart Wheelchair</h3>
+    <p>
+      Remote controlled smart wheelchair using Arduino UNO with Bluetooth and voice commands.
+      Integrated ultrasonic obstacle detection system for automatic stopping and safe mobility.
+    </p>
+    <a href="https://github.com/ShravaniGadkari05/VoiceControlled-SmartWheelchair.git" target="_blank">
+      View on GitHub
+    </a>
+  </div>
 
-  <section id="certifications">
-    <h2 class="section-title">Certifications</h2>
-    <ul class="cert-list">
-      <li>5G Masterclass – Udemy</li>
-      <li>Cyber Security Internship – InternPe</li>
-      <li>Python for Beginners – Udemy</li>
-      <li>Java 17 Masterclass – Udemy</li>
-    </ul>
-  </section>
+  <div class="project-card">
+    <h3>🧠 Jarvis: Personal Chatbot</h3>
+    <p>
+      Voice-enabled desktop assistant developed in Python. Automates system tasks using
+      speech recognition technology.
+    </p>
+    <a href="https://github.com/ShravaniGadkari05/Jarvis-Voice-Assistant" target="_blank">
+      View on GitHub
+    </a>
+  </div>
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
+  <div class="project-card">
+    <h3>🛡 Phishing Detection Website</h3>
+    <p>
+      Web application that classifies URLs as safe or malicious using machine learning models,
+      built using Flask and HTML/CSS.
+    </p>
+    <a href="https://github.com/ShravaniGadkari05/Phishing-Detection-Website" target="_blank">
+      View on GitHub
+    </a>
+  </div>
 
-   <div class="project-card">
-     <h3>Voice Controlled Smart Wheelchair</h3>
-     <p>Developed Smart Wheelchair using Arduino UNO with Bluetooth and voice control for navigation.
-Integrated ultrasonic obstacle detection system for automatic stopping and safe mobility.</p>
-     <a> href="https://github.com/ShravaniGadkari05/VoiceControlled-SmartWheelchair.git" target="_blank">View on Github</a>
-   </div>
-     
-     
-     <div class="project-card">
-      <h3>⚡ Smart EV Charging Station</h3>
-      <p>Arduino-based prototype for efficient EV charging with sensors and LCD for real-time monitoring.</p>
-      <a href="https://github.com/ShravaniGadkari05/Smart-EV-Charging-Station" target="_blank">View on GitHub</a>
-    </div>
+</section>
 
-    <div class="project-card">
-      <h3>🧠 Phishing Detection Website</h3>
-      <p>Machine learning-based web app that identifies phishing URLs using Flask and scikit-learn.</p>
-      <a href="https://github.com/ShravaniGadkari05/Phishing-Detection-Website" target="_blank">View on GitHub</a>
-    </div>
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact">
+    <p>📞 Phone: +91-9175125515</p>
+    <p>📧 Email: <a href="mailto:shravanigadkari05@gmail.com">shravanigadkari05@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" target="_blank">linkedin.com/in/shravani-gadkari-a1a26a31a</a></p>
+    <p>💻 GitHub: <a href="https://github.com/ShravaniGadkari05" target="_blank">github.com/ShravaniGadkari05</a></p>
+    <p>🌍 Location: Thane, Maharashtra, India</p>
+  </div>
+</section>
 
-    <div class="project-card">
-      <h3>🎙 Jarvis Voice Assistant</h3>
-      <p>Python-based voice bot that automates system tasks through speech recognition.</p>
-      <a href="https://github.com/ShravaniGadkari05/Jarvis-Voice-Assistant" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+<footer>
+  <p>© 2025 Shravani Gadkari | All Rights Reserved</p>
+</footer>
 
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact">
-      <p>📧 Email: <a href="mailto:shravanigadkari05@gmail.com">shravanigadkari05@gmail.com</a></p>
-      <p>💼 LinkedIn: <a href="https://linkedin.com/in/shravani-gadkari-a1a26a31a" target="_blank">linkedin.com/in/shravani-gadkari-a1a26a31a</a></p>
-      <p>💻 GitHub: <a href="https://github.com/ShravaniGadkari05" target="_blank">github.com/ShravaniGadkari05</a></p>
-      <p>📍 Location: Mangaon, Raigad, India</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>Shravani Gadkari </p>
-  </footer>
 </body>
 </html>
